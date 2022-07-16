@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #ffffff;
+}
+
+.main_title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    background: linear-gradient(45deg, #274fbd, #01d8fd, #14dfea, #3fc12a, #F9AC07, #5406d9, #e912a3, #7a3bca, #F9AC07, #7a3bca);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: Title 30s ease infinite;
+}
+@keyframes Title {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items:center;
+    height: 65vh;
+}
+
+/* Recipes list */
+.list {
+    display: inline-flex;
+    flex-direction: row;
+    width: 60vw;
+    justify-content: space-evenly;
+}
+.container .list .image {
+    width: 200px;
+    height: 200px;
+}
